@@ -5,7 +5,7 @@ export default async function handler(req, res) {
   if (req.method === "DELETE") {
     const { id } = req.query;
 
-    const { resource: existingTodo } = await container.item(id).read();
+    const { resource: existingTodo } = await container.item(id, id).read();
 
     if (!existingTodo) {
       res.status(404).json({ message: "Todo not found." });
