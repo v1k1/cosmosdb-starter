@@ -80,7 +80,7 @@ export default function Home() {
 
   return (
     <Box>
-      <Heading mt={8} textAlign="center">Todo App</Heading>
+      <Heading mt={8} textAlign="center">Todo App.</Heading>
       <VStack mt={4} spacing={4} mx="auto" maxW="md">
         <Input
           value={inputValue}
